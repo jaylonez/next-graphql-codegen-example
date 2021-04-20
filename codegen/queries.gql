@@ -1,0 +1,13 @@
+query allUsers {
+  allUsers {
+    id
+    email
+  }
+}
+
+query userById($id: ID!) {
+  userById(id: $id) {
+    id
+    email
+  }
+}

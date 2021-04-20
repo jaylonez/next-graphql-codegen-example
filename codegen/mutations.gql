@@ -1,0 +1,8 @@
+# import './fragments.graphql'
+
+mutation signUpUser($data: UserCreateInput!) {
+  signUpUser(data: $data) {
+    id
+    email
+  }
+}
