@@ -2,7 +2,7 @@ import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  uri: "http://prisma-env-1.eba-twycgq75.eu-central-1.elasticbeanstalk.com/",
+  uri: process.env.NEXT_PUBLIC_GRAPHQL_URL ?? "http://localhost:4000",
 });
 
 function MyApp({ Component, pageProps }) {

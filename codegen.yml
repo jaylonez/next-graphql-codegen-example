@@ -1,5 +1,5 @@
 overwrite: true
-schema: http://localhost:4000/graphql
+schema: EB_LINK_HERE
 documents: 'codegen/**/*.gql'
 generates:
   codegen/generated/graphql.tsx:
